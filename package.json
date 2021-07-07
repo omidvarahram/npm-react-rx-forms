@@ -1,12 +1,13 @@
 {
   "name": "react-reactive-x-forms",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "React reactive forms library",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
   "types": "./lib/esm/index.d.ts",
   "scripts": {
     "build": "yarn build:esm && yarn build:cjs",
+    "build:scss": "",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir lib/cjs"
   },
@@ -20,7 +21,9 @@
     "url": "https://github.com/omidvarahram/npm-react-rx-forms/issues"
   },
   "homepage": "https://github.com/omidvarahram/npm-react-rx-forms#readme",
-  "files": ["/lib"],
+  "files": [
+    "/lib"
+  ],
   "peerDependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
@@ -29,6 +32,7 @@
     "@types/react": "^17.0.13",
     "@types/react-dom": "^17.0.8",
     "eslint": "^7.30.0",
+    "node-sass": "^6.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "rxjs": "^7.1.0",

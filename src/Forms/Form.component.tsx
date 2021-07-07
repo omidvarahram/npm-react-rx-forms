@@ -1,15 +1,17 @@
 import React from 'react';
-import './Form.component.scss'
+import '../style/Main.css'
 
 interface FormProps {
   children: any;
   baseClassname: string;
 }
 
-export const FormComponent: React.FunctionComponent<FormProps> = (props: FormProps) => {
+const FormComponent: React.FunctionComponent<FormProps> = (props: FormProps) => {
   return (
     <form className={`App-Form ${props.baseClassname}`}>
       {props.children}
     </form>
   )
 }
+
+export default FormComponent

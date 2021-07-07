@@ -1,5 +1,5 @@
 import React from 'react';
-import './Validation-message.component.scss'
+import '../../Style/Main.css'
 
 interface ValidationMessageProps {
   valid: boolean,

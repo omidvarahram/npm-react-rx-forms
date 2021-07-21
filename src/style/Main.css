@@ -1,0 +1,160 @@
+.App-Form {
+    width: 50%;
+    max-width: 50rem;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    display: inline-flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+    line-height: 1;
+}
+
+.App-Form i.App-Form-Validation {
+    font-size: 1.1rem;
+    color: red;
+    text-transform: capitalize;
+    text-align: left;
+    margin: 0.2rem 0 1rem;
+}
+
+.App-Form input {
+    border: 0;
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+}
+
+.App-Form input:focus {
+    border: 0;
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+}
+
+.App-Form .App-Form-Input {
+    position: relative;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0 0 3px navy;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+}
+
+.App-Form .App-Form-Input input {
+    width: 70%;
+    padding: 0.5rem 0;
+    align-self: center;
+    font-size: 1.4rem;
+}
+
+.App-Form .App-Form-Input label {
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    color: grey;
+    align-self: center;
+    position: relative;
+    width: 25%;
+    transition: font-size 0.1s ease-in-out;
+}
+
+.App-Form .App-Form-Input label.top {
+    position: absolute;
+    display: inline-block;
+    top: -1rem;
+    left: 1rem;
+    z-index: 1000;
+    background: #fafafa;
+    color: currentColor;
+    padding: 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+.App-Form .App-Form-Checkbox {
+    width: 100%;
+    padding: 1rem;
+    display: inline-flex;
+    flex-direction: row;
+    line-height: 3rem;
+}
+
+.App-Form .App-Form-Checkbox input {
+    box-shadow: none;
+    background: transparent;
+    border-radius: 0;
+    height: 3rem;
+    width: 1.2rem;
+}
+
+.App-Form .App-Form-Checkbox label {
+    font-size: 1.2rem;
+    line-height: 3rem;
+    margin-right: 1rem;
+}
+
+.App-Form .App-Form-Checkbox input:focus {
+    box-shadow: none;
+}
+
+.App-Form .App-Form-Radio {
+
+}
+
+.App-Form .App-Form-Select {
+
+}
+
+.App-Form .App-Form-Textarea {
+
+}
+
+.App-Form .App-Form-Button {
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    margin: 0 1rem;
+}
+
+.App-Form .focused {
+    box-shadow: 0 0 4px green;
+    justify-content: stretch;
+}
+
+.App-Form .focused input {
+    width: 100%
+}
+
+.App-Form .invalid {
+    box-shadow: 0 0 4px red;
+    color: red
+}
+
+.App-Form .invalid.focused {
+    box-shadow: 0 0 4px red;
+    color: red;
+}
+
+@media all and (max-device-width: 380px){
+    form.App-Form {
+        width: 100%;
+        max-width: 50rem;
+        padding: 1.5rem 0;
+        margin: 1.5rem 0;
+    }
+
+    .App-Form .App-Form-Checkbox input {
+        padding: 0.5rem 1rem;
+        margin: 1rem 0;
+    }
+
+    .App-Form .focused {
+        box-shadow: 0 0 4px green;
+        justify-content: stretch;
+    }
+
+    .App-Form .focused input {
+        width: 100%
+    }
+
+}
